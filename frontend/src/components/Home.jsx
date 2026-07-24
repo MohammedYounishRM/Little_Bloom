@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LogIn, UserPlus, BookOpen, HeartPulse, Award, FileText, CheckCircle, Users, Building2, Calendar } from "lucide-react";
+import logo from "../../assets/logo.svg";
 
 const HomePage = () => {
     const regionalStats = [
@@ -37,7 +38,7 @@ const HomePage = () => {
             <header className="gov-top-banner">
                 <div className="gov-container header-flex">
                     <div className="gov-brand-block">
-                        <img src="../assets/logo.svg" alt="Little Bloom Emblem" className="gov-emblem-img" />
+                        <img src={logo} alt="Little Bloom Emblem" className="gov-emblem-img" />
                         <div className="gov-title-text">
                             <h1>Little Bloom - Integrated Child Development Services (ICDS)</h1>
                             <p className="sub-dept">Department of Social Welfare and Women Empowerment • Government of Tamil Nadu</p>

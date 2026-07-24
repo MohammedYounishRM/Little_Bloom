@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { useChildStore } from "./childStore.js";
 
-const API_URL = import.meta.env.VITE_API_BASE_URL ? `${import.meta.env.VITE_API_BASE_URL}/api/attendance` : "http://localhost:5000/api/attendance";
+const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/attendance" : "/api/attendance";
 axios.defaults.withCredentials = true;
 
 const Attendance = () => {

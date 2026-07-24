@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_BASE_URL ? `${import.meta.env.VITE_API_BASE_URL}/api/children` : "http://localhost:5000/api/children";
+const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/children" : "/api/children";
 axios.defaults.withCredentials = true;
 
 export const useChildStore = create((set) => ({

@@ -3,7 +3,7 @@ import { useNavigate, NavLink, Outlet } from "react-router-dom";
 import { LayoutDashboard, Users, CheckSquare, TrendingUp, User, LogOut, Heart } from "lucide-react";
 import { useAuthStore } from "./authStore.js";
 import Swal from "sweetalert2";
-import logo from "../assets/logo.svg"
+import logo from "../../assets/logo.svg"
 
 const SideBar = () => {
     const { logout } = useAuthStore();
