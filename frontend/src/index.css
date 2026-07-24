@@ -840,7 +840,7 @@ body:has(.workspace-app-shell) {
   overflow-y: auto;
   height: 100vh;
   max-height: 100vh;
-  padding: 2.5rem;
+  padding: 38px;
   background-color: #faf9f6;
 }
 /* Dashboard */
