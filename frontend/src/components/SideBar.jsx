@@ -3,6 +3,7 @@ import { useNavigate, NavLink, Outlet } from "react-router-dom";
 import { LayoutDashboard, Users, CheckSquare, TrendingUp, User, LogOut, Heart } from "lucide-react";
 import { useAuthStore } from "./authStore.js";
 import Swal from "sweetalert2";
+import logo from "../assets/logo.svg"
 
 const SideBar = () => {
     const { logout } = useAuthStore();
@@ -39,7 +40,7 @@ const SideBar = () => {
             <aside className="workspace-sidebar">
                 <div className="sidebar-brand-branding">
                     <div className="brand-logo-mock-graphic">
-                        <img src="../assets/logo.svg" />
+                        <img src={logo} />
                     </div>
                     <h2>Little Bloom</h2>
                 </div>
